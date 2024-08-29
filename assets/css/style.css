@@ -1,46 +1,3 @@
-/*
-@File: Busan Template Styles
-
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
-
-This files table contents are outlined below>>>>>
-
-*******************************************
-*******************************************
-
-** - Default CSS
-** - Preloader CSS
-** - Navbar Area CSS
-** - Main Banner Area CSS
-** - About Area CSS
-** - Features Area CSS
-** - Virtual Reality Design Area CSS
-** - Headphone Design Area CSS
-** - Compatibility Area CSS
-** - Discover With Phone Area CSS
-** - VR Specifications Area CSS
-** - Headphone Specifications Area CSS
-** - Eye Glass Specifications Area CSS
-** - Explore Area CSS
-** - Photo Gallery Area CSS
-** - Feedback Area CSS
-** - Clients Area CSS
-** - Shop Area CSS
-** - FAQ Area CSS
-** - Page Title Area CSS
-** - Blog Area CSS
-** - Blog Details Area CSS
-** - Pagination Area CSS
-** - Sidebar Area CSS
-** - Contact Area CSS
-** - Footer Area CSS
-** - Go Top CSS
-*/
-/*================================================
-Default CSS
-=================================================*/
 @import url("../../../../css");
 @import url("../../../../css-1");
 body {
@@ -106,7 +63,7 @@ a:hover {
 .btn {
   color: #384656;
   background-color: transparent;
-  border: 1px solid #58fba8;
+  /* border: 1px solid #58fba8; */
   padding: 10.5px 60px 10.5px 25px;
   line-height: initial;
   border-radius: 0;
@@ -590,7 +547,7 @@ Navbar Area CSS
 }
 
 .navbar-light.is-sticky .others-options .default-btn {
-  background-color: #58fba8;
+  background-color: #00b0ec;
   color: #000000;
 }
 
@@ -599,13 +556,11 @@ Navbar Area CSS
   background-color: #384656;
 }
 
-/*================================================
-Main Banner Area CSS
-=================================================*/
 .vr-main-banner {
-  background-color: #58fba8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00e4ff), color-stop(#00eef2), color-stop(#00f6dc), color-stop(#15fbbc), to(#69ff97));
-  background: linear-gradient(to bottom, #00e4ff, #00eef2, #00f6dc, #15fbbc, #69ff97);
+  /* background-color: #58fba8; */
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#00e4ff), color-stop(#00eef2), color-stop(#00f6dc), color-stop(#15fbbc), to(#69ff97)); */
+  /* background: linear-gradient(to bottom, #00e4ff, #00eef2, #00f6dc, #15fbbc, #69ff97); */
+  background: white;
   padding-top: 160px;
   padding-bottom: 100px;
 }
@@ -617,8 +572,8 @@ Main Banner Area CSS
 }
 
 .main-banner-content h1 {
-  color: #ffffff;
-  text-shadow: 1px 1px #384656;
+  color: #00b0ec;
+  text-shadow: 1px 1px #019ed2;
   margin-top: 7px;
   margin-bottom: 18px;
   line-height: 1.1;
@@ -3130,6 +3085,13 @@ Blog Details Area CSS
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 767px) {
+    .social {
+        display: none;
+    }
+}
+
+
 .blog-details .article-footer .article-share .social li {
   display: inline-block;
 }
@@ -4073,7 +4035,7 @@ Contact Area CSS
   margin-top: 25px;
 }
 
-.contact-info .contact-info-list li {
+/* .contact-info .contact-info-list li {
   margin-bottom: 15px;
   color: #4c6c90;
   font-size: 14px;
@@ -4092,7 +4054,8 @@ Contact Area CSS
 .contact-info .contact-info-list li i::before {
   font-size: 25px;
   background: -webkit-gradient(linear, left top, left bottom, from(#00e4ff), color-stop(#00eef2), color-stop(#00f6dc), color-stop(#15fbbc), to(#69ff97));
-  background: linear-gradient(to bottom, #00e4ff, #00eef2, #00f6dc, #15fbbc, #69ff97);
+  background: linear-gradient(to bottom, #00b0ec, #00b0ec, #00b0ec, #00b0ec, #00b0ec);
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -4112,8 +4075,54 @@ Contact Area CSS
 }
 
 .contact-info .contact-info-list li a:hover {
-  color: #58fba8;
+  color: #00b0ec;
+} */
+
+
+.contact-details {
+  margin-bottom: 15px;
+  color: #4c6c90;
+  font-size: 14px;
+  position: relative;
+  padding-left: 35px;
 }
+
+.contact-details i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.contact-details i::before {
+  font-size: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00e4ff), color-stop(#00eef2), color-stop(#00f6dc), color-stop(#15fbbc), to(#69ff97));
+  background: linear-gradient(to bottom, #00b0ec, #00b0ec, #00b0ec, #00b0ec, #00b0ec);
+  /* background:#00b0ec !important; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-details i.fa-envelope-open-text {
+  left: -3px;
+}
+
+.contact-details span {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.contact-details a {
+  color: #4c6c90;
+}
+
+.contact-details a:hover {
+  color: #00b0ec;
+}
+
+
 
 .contact-info .social {
   padding-left: 0;
@@ -4151,8 +4160,8 @@ Contact Area CSS
   z-index: -1;
   -webkit-transform: scale(0);
           transform: scale(0);
-  background: -webkit-gradient(linear, left top, left bottom, from(#00e4ff), color-stop(#00eef2), color-stop(#00f6dc), color-stop(#15fbbc), to(#69ff97));
-  background: linear-gradient(to bottom, #00e4ff, #00eef2, #00f6dc, #15fbbc, #69ff97);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00b0ec), color-stop(#00b0ec), color-stop(#00b0ec), color-stop(#00b0ec), to(#00b0ec));
+  background: linear-gradient(to bottom, #00b0ec, #00b0ec, #00b0ec, #00b0ec, #00b0ec);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.5s;
